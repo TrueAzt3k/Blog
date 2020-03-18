@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git Curso</title>
+    <title>Portafolio - Alexis</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/0209842b96.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Alexis Trejo</h1>
-        <nav>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Portafolio</a></li>
-            <li><a href="#">Contacto</a></li>
-        </nav>
+        <div class="container">
+            <h1>Alexis Trejo</h1>
+            <nav>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </nav>
+            <button onclick="favorite()" id="fav"><i class="fas fa-heart"></i>Favorito</button>
+        </div>
     </header>
+    <script src="script.js"></script>
 </body>
 </html>

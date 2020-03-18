@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background: rgb(31, 31, 48);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    border-bottom: rgb(42, 42, 65) 2px solid;
+}
+
+header .container {
+    position: relative;
+    width: 95%;
+    max-width: 1000px;
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container h1 {
+    color: #fff;
+    font-weight: 100;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+header .container nav {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container nav li {
+    position: relative;
+    height: 80%;
+    width: 33%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    min-width: 90px;
+}
+
+header .container nav li:first-child{
+    border-right: 2px solid rgb(42, 42, 65);
+}
+header .container nav li:last-child{
+    border-left: 2px solid rgb(42, 42, 65);
+}
+
+header .container nav li a {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+    height: 70%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+header .container nav li a:hover {
+    box-shadow:inset 0 -2px #00ffaa;
+    animation: link-hover 1s ease infinite;
+}
+
+header .container button {
+    width: 150px;
+    height: 30px;
+    border-radius: 15px;
+    border: #dd004a 2px solid;
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    background: none;
+    cursor: pointer;
+    color: #dd004a;
+    transition: all 0.4s ease;
+}
+header .container button.fav{
+    color: #fff;
+    background: #dd004a;
+}
+header .container button i{
+    margin-right: 0.5rem;
+}
+header .container button:hover{
+    color: #fff;
+    background: #dd004a;
+}
+
+@keyframes link-hover{
+    50%{
+        color: #ccc;
+    }
+}
